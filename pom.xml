@@ -7,6 +7,20 @@
   <version>3.0-SNAPSHOT</version>
   <name>01-maven-web-app</name>
   <url>http://maven.apache.org</url>
+
+  <distributionManagement>  
+    <repository>
+		<id>nexus</id>
+		<name>Ashok IT Releases Nexus Repo</name>
+		<url>http://54.224.46.43:8081/repository/utkarshit-relese-repo/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>Ashok IT Snapshots Nexus Repo</name>
+		<url>http://54.224.46.43:8081/repository/utkarshit-snapshot-repo/</url>
+	</snapshotRepository>
+	</distributionManagement>
  
   <dependencies>
     <dependency>
@@ -15,6 +29,7 @@
       <version>3.8.1</version>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>01-maven-web-app</finalName>
     <plugins>
